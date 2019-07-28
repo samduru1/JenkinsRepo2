@@ -6,7 +6,7 @@ pipeline {
         stage('MAKEDIRECTORY') {
             steps {
                 sh """
-                mkdir /tmp/pipedir3
+                mkdir /tmp/pipedir4
                 """
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         stage('TOUCH NEW FILE') {
             steps {
                 sh """
-                touch /tmp/pipefile2
+                touch /tmp/pipefile3
                 """
             }
         }
@@ -22,7 +22,7 @@ pipeline {
         stage('COPY FILE TO DIR') {
             steps {
                 sh """
-                cp /tmp/pipefile2 /tmp/pipedir3
+                cp /tmp/pipefile3 /tmp/pipedir4
                 """
             }
         }
